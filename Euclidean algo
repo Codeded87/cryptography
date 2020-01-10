@@ -1,0 +1,20 @@
+#include<iostream>
+//obtain the gcd(80808,31863)
+int main(){
+    
+    int divident;
+    int divisor ;
+    int quotient =0;
+    int rem=0;
+    printf("Enter the divident");
+    scanf("%d",&divident);
+    printf("\n Enter the divisor");
+    scanf("%d",&divisor);
+    while(divident!=0){
+            rem  = divident % divisor;
+            printf("%d\n",rem);
+            divident=divisor;
+            divisor=rem;
+    }printf("%f\n",quotient);
+    printf("%f\n",rem);
+}
